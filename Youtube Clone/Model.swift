@@ -7,7 +7,16 @@
 
 import Foundation
 
+
+protocol ModelDelegate {
+  
+  func videoFatched(_ videos: [Video])
+}
+
+
+
 class Model {
+  
   
   // buat fungsi untuk ngambil data dari Youtube API
   func getVideo(){
@@ -30,6 +39,21 @@ class Model {
       if error != nil || data == nil{
       return
     }
+      
+      do {
+        // parsing the data into video project
+        // memasukkan data ke dalam project video
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
+        let response = try decoder.decode(Response.self, from: data!)
+        
+        dump(response)
+      }
+      catch {
+        
+      }
   }
     // mulai bekerja
     dataTask.resume()
