@@ -1,13 +1,6 @@
-//
-//  Video.swift
-//  Youtube Clone
-//
-//  Created by dimas pendriansyah on 15/03/21.
-//
-
 import Foundation
 
-struct Video: Decodable {
+struct Video : Decodable {
   var videoId = ""
   var title = ""
   var description = ""
@@ -24,10 +17,13 @@ struct Video: Decodable {
     case published = "publishedAt"
     case title
     case description
-    case thumbnaill = "url"
+    case thumbnail = "url"
+    case videoId
+    
   }
   
   init(from decoder: Decoder) throws {
+    
     let container = try decoder.container(keyedBy: CodingKeys.self)
     
     let snippetContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .snippet)
@@ -42,10 +38,11 @@ struct Video: Decodable {
     
     let highContainer = try thumbnailContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .high)
     
-    self.thumbnail = try highContainer.decode(String.self, forKey: .thumbnaill)
+    self.thumbnail = try highContainer.decode(String.self, forKey: .thumbnail)
     
     let resourceIdContainer = try snippetContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .resourceId)
     
     self.videoId = try resourceIdContainer.decode(String.self, forKey: .videoId)
+    
   }
 }
