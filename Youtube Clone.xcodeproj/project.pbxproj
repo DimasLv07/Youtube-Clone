@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904701912602FF5B0084C868 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904701902602FF5B0084C868 /* VideoTableViewCell.swift */; };
 		904B048126006CE5008D4CD8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B048026006CE5008D4CD8 /* Response.swift */; };
+		9053252D26032DE50037B121 /* ChaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053252C26032DE50037B121 /* ChaceManager.swift */; };
 		90CD3A4425FF0D0800C38B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD3A4325FF0D0800C38B31 /* AppDelegate.swift */; };
 		90CD3A4625FF0D0800C38B31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD3A4525FF0D0800C38B31 /* SceneDelegate.swift */; };
 		90CD3A4825FF0D0800C38B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CD3A4725FF0D0800C38B31 /* ViewController.swift */; };
@@ -20,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		904701902602FF5B0084C868 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		904B048026006CE5008D4CD8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9053252C26032DE50037B121 /* ChaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaceManager.swift; sourceTree = "<group>"; };
 		90CD3A4025FF0D0800C38B31 /* Youtube Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CD3A4325FF0D0800C38B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90CD3A4525FF0D0800C38B31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9047018A2602FAFE0084C868 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90CD3A4725FF0D0800C38B31 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9047018C2602FBA70084C868 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90CD3A5B25FF11C100C38B31 /* Video.swift */,
+				90CD3A5E25FF12E300C38B31 /* Model.swift */,
+				904B048026006CE5008D4CD8 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9047018D2602FBC50084C868 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				904701902602FF5B0084C868 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9047018E2602FBCD0084C868 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				90CD3A4925FF0D0800C38B31 /* Main.storyboard */,
+				90CD3A4E25FF0D0D00C38B31 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9047018F2602FBDC0084C868 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90CD3A5825FF0D6A00C38B31 /* Constants.swift */,
+				9053252C26032DE50037B121 /* ChaceManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		90CD3A3725FF0D0700C38B31 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +114,13 @@
 			children = (
 				90CD3A4325FF0D0800C38B31 /* AppDelegate.swift */,
 				90CD3A4525FF0D0800C38B31 /* SceneDelegate.swift */,
-				90CD3A4725FF0D0800C38B31 /* ViewController.swift */,
-				90CD3A4925FF0D0800C38B31 /* Main.storyboard */,
+				9047018F2602FBDC0084C868 /* Helpers */,
+				9047018E2602FBCD0084C868 /* Storyboards */,
+				9047018D2602FBC50084C868 /* Views */,
+				9047018C2602FBA70084C868 /* Models */,
+				9047018A2602FAFE0084C868 /* View Controllers */,
 				90CD3A4C25FF0D0D00C38B31 /* Assets.xcassets */,
-				90CD3A4E25FF0D0D00C38B31 /* LaunchScreen.storyboard */,
 				90CD3A5125FF0D0D00C38B31 /* Info.plist */,
-				90CD3A5825FF0D6A00C38B31 /* Constants.swift */,
-				90CD3A5B25FF11C100C38B31 /* Video.swift */,
-				90CD3A5E25FF12E300C38B31 /* Model.swift */,
-				904B048026006CE5008D4CD8 /* Response.swift */,
 			);
 			path = "Youtube Clone";
 			sourceTree = "<group>";
@@ -152,8 +198,10 @@
 				90CD3A4825FF0D0800C38B31 /* ViewController.swift in Sources */,
 				90CD3A4425FF0D0800C38B31 /* AppDelegate.swift in Sources */,
 				90CD3A4625FF0D0800C38B31 /* SceneDelegate.swift in Sources */,
+				9053252D26032DE50037B121 /* ChaceManager.swift in Sources */,
 				90CD3A5F25FF12E300C38B31 /* Model.swift in Sources */,
 				90CD3A5925FF0D6A00C38B31 /* Constants.swift in Sources */,
+				904701912602FF5B0084C868 /* VideoTableViewCell.swift in Sources */,
 				90CD3A5C25FF11C100C38B31 /* Video.swift in Sources */,
 				904B048126006CE5008D4CD8 /* Response.swift in Sources */,
 			);
